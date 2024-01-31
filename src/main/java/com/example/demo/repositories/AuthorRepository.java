@@ -1,6 +1,6 @@
-package com.example.demo.model.repositories;
+package com.example.demo.repositories;
 
-import com.example.demo.model.Author;
+import com.example.demo.repositories.model.Author;
 import org.springframework.data.repository.CrudRepository;
 
 public interface AuthorRepository extends CrudRepository<Author, Long> {

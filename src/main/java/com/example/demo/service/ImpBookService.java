@@ -1,23 +1,22 @@
 package com.example.demo.service;
 
-import com.example.demo.repositories.model.Author;
-import com.example.demo.repositories.AuthorRepository;
+import com.example.demo.repositories.model.Book;
 
 import java.util.Optional;
 
-public class AuthorService implements AuthorRepository {
+public class ImpBookService implements BookService{
     @Override
-    public <S extends Author> S save(S entity) {
+    public <S extends Book> S save(S entity) {
         return null;
     }
 
     @Override
-    public <S extends Author> Iterable<S> saveAll(Iterable<S> entities) {
+    public <S extends Book> Iterable<S> saveAll(Iterable<S> entities) {
         return null;
     }
 
     @Override
-    public Optional<Author> findById(Long aLong) {
+    public Optional<Book> findById(Long aLong) {
         return Optional.empty();
     }
 
@@ -27,12 +26,12 @@ public class AuthorService implements AuthorRepository {
     }
 
     @Override
-    public Iterable<Author> findAll() {
+    public Iterable<Book> findAll() {
         return null;
     }
 
     @Override
-    public Iterable<Author> findAllById(Iterable<Long> longs) {
+    public Iterable<Book> findAllById(Iterable<Long> longs) {
         return null;
     }
 
@@ -47,7 +46,7 @@ public class AuthorService implements AuthorRepository {
     }
 
     @Override
-    public void delete(Author entity) {
+    public void delete(Book entity) {
 
     }
 
@@ -57,7 +56,7 @@ public class AuthorService implements AuthorRepository {
     }
 
     @Override
-    public void deleteAll(Iterable<? extends Author> entities) {
+    public void deleteAll(Iterable<? extends Book> entities) {
 
     }
 
